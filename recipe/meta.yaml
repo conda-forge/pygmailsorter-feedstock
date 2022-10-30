@@ -1,5 +1,5 @@
 {% set name = "pygmailsorter" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygmailsorter-{{ version }}.tar.gz
-  sha256: 3398ae79e1a9a3becb7584b88c7243079e68df2f29227754e7995736e21f2473
+  sha256: 0f2ad8837b5a2f775b9af6f67223c4d61baad63d579e0fed64d46752445006ab
 
 build:
   noarch: python
@@ -19,15 +19,15 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - google-api-python-client >=2.56.0
-    - google-auth >=2.10.0
-    - google-auth-oauthlib >=0.5.2
-    - numpy >=1.23.1
-    - pandas >=1.4.3
+    - google-api-python-client >=2.65.0
+    - google-auth >=2.13.0
+    - google-auth-oauthlib >=0.7.0
+    - numpy >=1.23.4
+    - pandas >=1.5.1
     - python >=3.7
-    - scikit-learn >=1.1.2
-    - sqlalchemy >=1.4.40
-    - tqdm >=4.64.0
+    - scikit-learn >=1.1.3
+    - sqlalchemy >=1.4.42
+    - tqdm >=4.64.1
 
 test:
   imports:
