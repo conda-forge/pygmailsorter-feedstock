@@ -16,11 +16,11 @@ index cfcff81..b50c749 100644
      license="BSD",
      packages=find_packages(exclude=["*tests*"]),
 +    package_data={
-+        'webapp/static/css': ['*.css'],
-+        'webapp/static/fonts/poppins': ['*.ttf'],
-+        'webapp/static/images': ['*.jpg'],
-+        'webapp/static/images/icons': ['*.ico'],
-+        'webapp/templates': ['*.html'],
++        'webapp.static.css': ['*.css'],
++        'webapp.static.fonts.poppins': ['*.ttf'],
++        'webapp.static.images': ['*.jpg'],
++        'webapp.static.images.icons': ['*.ico'],
++        'webapp.templates': ['*.html'],
 +    },
      install_requires=[
          "google-api-python-client==2.92.0",
