@@ -12,10 +12,10 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - pygmailsorter = pygmailsorter.__main__:command_line_parser
-    - pygmailsorter-daemon = pygmailsorter.__main__:command_line_parser
+    - pygmailsorter-daemon = pygmailsorter.daemon.__main__:command_line_parser
 
 requirements:
   host:
